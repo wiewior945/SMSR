@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/smsImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="105dp"
+        app:srcCompat="@drawable/x" />
+
+    <ImageView
+        android:id="@+id/phoneImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/smsImage"
+        android:layout_marginEnd="50dp"
+        app:srcCompat="@drawable/x" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phoneImage"
+        android:layout_alignEnd="@+id/smsImage"
+        android:layout_alignStart="@+id/smsImage"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:text="SMS"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/phoneImage"
+        android:layout_alignStart="@+id/phoneImage"
+        android:layout_alignTop="@+id/textView5"
+        android:gravity="center_horizontal"
+        android:text="Phone"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/statusImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        app:srcCompat="@drawable/x" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/statusImage"
+        android:layout_alignEnd="@+id/statusImage"
+        android:layout_alignStart="@+id/statusImage"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:text="Status"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>
